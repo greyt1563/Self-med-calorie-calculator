@@ -1,0 +1,42 @@
+{% extends 'theme/Practice1.html' %} {% load static %} {% block head %}
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us </title>
+
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- custom css file link  -->
+<link rel="stylesheet" href="{% static 'home/css/style.css' %}"> {% endblock head %} {% block body %}
+<div class="container">
+    <h1 style="font-size: 3rem;line-height : 1.8;color: black;text-shadow: .4rem .4rem 0 rgba(0,0,0,.2);">
+        <center>About Us</center>
+    </h1>
+    <h1 style="font-size: 3rem;line-height : 1.8;color: black;text-shadow: .4rem .4rem 0 rgba(0,0,0,.2);">
+        <center>The Story of the Infallibles</center>
+    </h1>
+    <div>
+        <p>All great dramas in life start small and they have humble beginnings. They include generous servings of “aha moments” when the protagonists involved in the play tap their toes, jump up in joy and reach for the proverbial cloud nine. They also
+            encompass more than your regular servings of soul wrenching moments of dark, deep depression.</p>
+        <h3>The Purpose</h3>
+        <p><b>We make decisions more rational.</b></p>
+        <p>Far too often, we perceive the world through the lens of our emotions, feelings, and intuition. Meanwhile, a multitude of our problems can be solved with a tiny bit of math.</p>
+        <p>In Self Med, we knock down each and every obstacle that stands between you and an informed decision. We provide the numbers you need, making calculations fast, easy, and fun.</p>
+        <p>A world driven by rational decisions is a better place. It's a world where we don't waste resources as much, believe nonsense a bit less, and don't mistake opinions for facts.</p>
+        <p><b>It's the world we want to help building.</b></p>
+        <h3>The Vision</h3>
+        <p>Despite solving five million problems every month, we know we've barely scratched the surface. There are more people to reach, and more math to be done. That's why our collection of calculators grows every day and won't stop until we respond to
+            all computable needs.</p>
+        <p><b>Turning reality into calculators.</b></p>
+        <p>Self Med is a Polish startup that brings you hundreds of custom-built calculators. Each of them solves a real-life problem that, while tiny, is shared by millions of people across the globe. Our calculators take only seconds to use and give you
+            precisely the numbers you need.</p>
+        <p>We're called Self Med for a single reason - our goal is to solve all small math problems that people deal with on an everyday basis.</p>
+        <p>The default calculator you're using today still assumes you know required formulas and feel comfortable with arithmetics. More often than not, it's not the case. It's about time these problems got easy for everybody.</p>
+
+    </div>
+</div>
+
+
+{% endblock body %}

@@ -1,0 +1,166 @@
+{% extends 'theme/Practice1.html' %} {% load static %} {% block head %}
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Calorie calculator</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+{% endblock head %} {% block body %}
+
+<div style="padding-top:30px">
+    <h2 class="text-center title"> Calorie Calculator</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-5 my-md-0">
+                <form action="" class="sign-in-form" method="POST">
+                    {% csrf_token %}
+
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="weigth (in kilogram)" id="weight" name="weight" step="1"
+                            required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" placeholder="height (in centimeter)" id="height" name="height" step="0.001"
+                            required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" placeholder="age" id="age" name="age" step="1" required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <select name="gender" id="pa" required>
+                            <option value="" class="hid" disabled selected hidden>Gender</option>
+                            <option value="0"> Male</option>
+                            <option value="1">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <select name="pa" id="pa" required>
+                            <option value="" class="hid" disabled selected hidden>Physical Activities done by you
+                            </option>
+                            <option value="0">Sedentary lifestyle (little or no exercise)</option>
+                            <option value="1">Slightly active lifestyle (light exercise or sports 1-2 days/week)
+                            </option>
+                            <option value="3">Moderately active lifestyle (moderate exercise or sports 2-3 days/week)
+                            </option>
+                            <option value="4">Very active lifestyle (hard exercise or sports 4-5 days/week)</option>
+                            <option value="5">Extra active lifestyle (very hard exercise, physical job or sports 6-7
+                                days/week)
+                            </option>
+                            <option value="6">Professional athlete </option>
+                        </select>
+                    </div>
+
+
+                    <input type="submit" value="Submit" id="buton" class="form-btn solid" />
+
+                </form>
+                <div class="text-center">
+                    {% if messages %}
+                    <div class="messages">
+                        {% for message in messages %}
+                        <p>Your body calorie is {{ message }}</p>
+                        <div>
+                            <a href="diet_plan?cal={{ message }}" class="dp">To check your diet plan click here.</a>
+                        </div><br><br>
+                        {% endfor %}
+                        <div class="container ">
+                            <div class="row d-flex gap-4">
+                                <div class="col-sm" style="border: solid;border-radius: 10px;background-color: #ff4f5a;color: #fff;padding-top: 10px;" >
+                                    <div style="font-size: 22px;font-weight: bold;">{{carbs}}</div>
+                                    <p>Carbs</p>
+                                </div>
+                                <div class="col-sm" style="border: solid;border-radius: 10px;background-color: #ff4f5a;color: #fff;padding-top: 10px;">
+                                    <div style="font-size: 22px;font-weight: bold;">{{fat}}</div>
+                                    <p>Fat</p>
+                                </div>
+                                <div class="col-sm" style="border: solid;border-radius: 10px;background-color: #ff4f5a;color: #fff;padding-top: 10px;">
+                                    <div style="font-size: 22px;font-weight: bold;">{{protein}}</div>
+                                    <p>Protein</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    {% endif %}
+                </div>
+                <div class="text-center">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6 my-5 my-md-0">
+                <h3> What is a Calorie Calculator?</h3>
+                <p>The calorie calculator, also called the TDEE calculator, can help you in determining how many
+                    calories should you eat a day - or what your starting point is if you want to gain or lose weight.
+                    In this article, you will find not only the
+                    formulas our calorie counter uses, but also what kinds of food to eat to cut down your weight in a
+                    responsible way. </p>
+                <h3>What are calories, exactly?</h3>
+                <p>Calories are measures of energy. 1 calorie is equivalent to about 4.18 joules.<br>In nutrition, we
+                    actually deal with kilocalories (kcal), where 1 kcal is equal to a thousand of the "small"
+                    calories.<br> As you could expect, 1 kcal = 4.18
+                    kJ.
+                </p>
+                <h3>How our calorie calculator works?</h3>
+                <p>The calorie calculator is based on the Mifflin - St Jeor equation. It allows you to find your Basal
+                    Metabolic Rate (BMR) - the amount of energy needed for your body to support only its basic vital
+                    functions. It differs for men and women:</p>
+                <p>BMR(men) = (10 * weight / 1kg + 6.25 * height / 1cm - 5 * age / 1 year + 5) kcal / day</p>
+                <p>BMR(women) = (10 * weight / 1kg + 6.25 * height / 1cm - 5 * age / 1 year - 161) kcal / day</p>
+
+                <p>After you calculate your BMR, you need to multiply it by a factor corresponding to your physical
+                    activity level:</p>
+                <p>Sedentary lifestyle (little or no exercise): 1.2</p>
+                <P>Slightly active lifestyle (light exercise or sports 1-2 days/week): 1.4</P>
+                <p>Moderately active lifestyle (moderate exercise or sports 2-3 days/week): 1.6</p>
+                <p>Very active lifestyle (hard exercise or sports 4-5 days/week): 1.75</p>
+                <p>Extra active lifestyle (very hard exercise, physical job or sports 6-7 days/week): 2.0</p>
+                <p>Professional athlete: 2.3</p>
+                <h3>What is a calorie deficit?</h3>
+                <p>Calorie deficit is when you consume less calories in a day than you have burnt. This means that, to
+                    make up the calories your body has used, your body will burn fat or muscle to make up for it. This
+                    means that having a calorie deficit
+                    will cause you to lose weight.</p><br><br>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        var chartDiv = $("#myChart");
+        var myChart = new Chart(chartDiv, {
+            type: 'pie',
+            data: {
+                labels: ["Fat", "Carbs", "Proteins"],
+                datasets: [
+                    {
+                        data: {{data}},
+                        backgroundColor: [
+                            "#FF6384",
+                            "#4BC0C0",
+                            "#FFCE56"
+                        ]
+                    }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Pie Chart'
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+            }
+        });
+    });
+</script>
+
+{% endblock body %}

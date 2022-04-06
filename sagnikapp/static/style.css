@@ -1,0 +1,161 @@
+:root {
+    --green: #ff4f5a;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+.navbar .nav-link {
+    text-transform: capitalize;
+}
+
+.accordion {
+    background-color: #262626;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(95, 95, 95);
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(204, 204, 204, 0.52);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.table {
+    margin: 30px 0px;
+}
+
+input#myNumber {
+    width: 30px;
+    text-align: center;
+    padding: 0px;
+}
+
+td#pic img {
+    width: 81px;
+    height: auto;
+}
+
+td#qty button {
+    width: 20px;
+    height: 24px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+nav {
+    padding: 15px 0px !important;
+    font-size: 110%;
+}
+
+.footer .box-container .box h3 {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    color: rgba(255, 255, 255, .75);
+    padding: 1rem 0;
+    text-decoration: none;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span {
+    color: var(--green);
+}
+
+
+.common .box{
+    background-color: #ffe6e8;
+    border-radius: 10px;
+}
+.common .box .box1{
+    border-right: .1rem solid rgb(108 103 103 / 39%);
+    padding-left: 35px;
+    padding-top: 10px;   
+}
+
+.common .box .box2{
+    border-right: .1rem solid rgb(108 103 103 / 39%);
+    padding-left: 35px;
+    padding-top: 10px;}
+.common .box .box3{
+    padding-left: 35px;
+    padding-top: 10px;   
+
+}
+.common .left{
+    position: relative;
+    height: 160px;
+}
+.common .image{
+    position: absolute;
+    right: 0;
+    top: -20px;
+}

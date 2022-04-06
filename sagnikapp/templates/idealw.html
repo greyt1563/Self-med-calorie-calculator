@@ -1,0 +1,106 @@
+{% extends 'theme/Practice1.html' %} {% load static %} {% block head %}
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Ideal Weight calculator</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+{% endblock head %} {% block body %}
+
+<div style="padding-top:30px">
+    <h2 class="text-center title"> Ideal Weight Calculator</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-5 my-md-0">
+                <form action="" class="sign-in-form" method="POST">
+                    {% csrf_token %}
+
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="weigth (in kilogram)" id="weight" name="weight" step="1" required />
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="input-field">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="number" min="0" max="12" placeholder="height (in ft)" id="hf" name="hf" step="0.001" required />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-field">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="number" min="0" max="12" placeholder="height (in inches )" id="hi" name="hi" step="0.001" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <select name="gender" id="pa" required>
+                    <option value="" class="hid" disabled selected hidden>Gender</option>
+                    <option value="0"> Male</option>
+                    <option value="1">Female</option>
+                </select>
+                    </div>
+
+                    
+
+
+                    <input type="submit" value="Submit" id="buton" class="form-btn solid" />
+
+                </form>
+                <div class="text-center">
+                    {% if messages %}
+                    <div class="messages">
+                        {% for message in messages %}
+                        <p>Your ideal weight is {{ idw }} kg</p>
+                        <p>Your maximum weight should be is {{ maxw }} kg</p>
+                        <p>Your minimum weight should be is {{ minw }} kg</p>
+                        <p>{{ lg }}</p>
+                        <img src="{{ img }}">
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-6 my-5 my-md-0">
+                
+                    <h3>What is a Ideal Weight Calculator?</h3>
+                    <p>If you are really concerned about your health or your looks and want to know how much you should weigh, this ideal weight calculator is
+                        the tool for you. It will help you determine your ideal body weight based on your height and sex. Read on to learn the different 
+                       formulas for calculating your IBW (ideal body weight) and how to interpret the results. We will also explain how to use the healthy 
+                       weight chart, which is based on BMI.</p>
+                    <h3>How much should I weight?</h3>
+                    <p>There many many ways to estimate somebodies ideal weight. Truth be told, none of them is perfectly accurate, as there are a lot of 
+                        factors influencing it. For example, for people with a lot of muscle mass (and high lean body mass), their ideal weight will tend to be
+                         more than indicated by the results they obtain.</p>
+                    <h3>How do you calculate your ideal body weight? </h3>
+                    <p>To calculate your ideal body weight, you can use the Devine formula.
+                    </p>
+                    <p>Devine formula for man:
+                        50.0 kg + 2.3 kg for every inch over 5 feet</p>
+                    <p>Devine formula for women:
+                        45.5 kg + 2.3 kg for every inch over 5 feet</p>
+                    <p>The Devine formula only requires your height. <br>
+                        There are more ideal body weight formulas, but the Devine one is the most popular and the most validated.</p>
+                    <h3>How to calculate ideal body weight in pounds?</h3>
+                    <p>To calculate your ideal body weight in pounds, you can use the modified Devine formula.
+                    </p>
+    
+                    <p>For men: 110.23 lb + 5.1 lb per every inch over 5 feet.</p>
+                    <p>For women: 100.3 lb + 5.1 lb per every inch over 5 feet.</p>
+    
+    
+                    <br><br>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock body %}

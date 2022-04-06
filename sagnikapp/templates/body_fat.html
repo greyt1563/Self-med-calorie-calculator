@@ -1,0 +1,170 @@
+{% extends 'theme/Practice1.html' %} {% load static %}{% block head %}
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>BFP calculator</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+    .progress-center{
+        display: flex;
+        justify-content: center;
+    }
+    .progress1 {
+        position: relative;
+        margin: 4px;
+        float: left;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .barOverflow {
+        /* Wraps the rotating .bar */
+        position: relative;
+        overflow: hidden;
+        /* Comment this line to understand the trick */
+        width: 200px;
+        height: 150px;
+        margin-bottom: -50px;
+        /* bring the numbers up */
+    }
+
+    .bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: 10px solid #eee;
+        border-bottom-color: #0bf;
+        border-right-color: #0bf;
+    }
+</style>
+{% endblock head %} {% block body %}
+
+
+<div style="padding-top:30px">
+    <h2 class="text-center title"> Body Fat Percentage Calculator</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-5 my-md-0">
+                <form action="" class="sign-in-form" method="POST">
+                    {% csrf_token %}
+
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="weigth (in kilogram)" id="weight" name="weight" step="1"
+                            required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" placeholder="height (in centimeter)" id="height" name="height" step="0.001"
+                            required />
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <select name="gender" id="pa" required>
+                            <option value="" class="hid" disabled selected hidden>Gender</option>
+                            <option value="0"> Male</option>
+                            <option value="1">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" placeholder="age" id="age" name="age" step="1" required />
+                    </div>
+
+                    <input type="submit" value="Submit" id="buton" class="form-btn solid" />
+                </form>
+                <div class="col text-center">
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="messages">
+                        <p>Your Body Fat Percentage is:- {{ message }}</p>
+                    </div>
+                    <div class="progress-center">
+                        <div class="progress1">
+                            <div class="barOverflow">
+                                <div class="bar"></div>
+                            </div>
+                            <span>{{ message }}</span>%
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+
+            </div>
+            <div class="col-md-6 my-5 my-md-0">
+                <h3>What is a BFP Calculator?</h3>
+                <p>This body fat calculator is a tool designed to help you estimate what percentage of your total body
+                    weight is body fat. If you ever wondered what is your body fat percentage, this is a perfect place
+                    to find out. We will explain to you
+                    in detail not only what is the importance of this information, but also how to calculate your body
+                    fat (including some alternative methods for measuring it) and give you some general guidelines
+                    regarding reducing your body fat.
+                </p>
+                <h3>What is body fat?</h3>
+                <p>It is actually adipose tissue; its main function is to store energy in the form of lipids, but it
+                    cushions and insulates your body, too. Your body stores two types of fat: essential and storage body
+                    fat. The former is necessary to support
+                    life and reproductive functions. Essential body fat is substantially higher for women because of
+                    childbearing and hormonal functions. Storage body fat is the mass of additional accumulated fat. It
+                    does not mean that this type of body
+                    fat is unnecessary, though - part of it protects your abdomen and internal organs.
+                </p>
+                <h3>How to calculate body fat?</h3>
+                <p>You can estimate your body composition with our body fat percentage calculator. Remember that no
+                    calculator, however complicated, can replace a visit in a doctor's office. You should treat this
+                    result as a rough estimate; it can only tell
+                    you if your body fat percentage is drastically too high, but there's no reason to panic if the
+                    result differ slightly from the recommended value.</p>
+                <p>To calculate the body fat percentage, you need to gather the following data:</p>
+                <ul>
+                    <li>Your age & gender</li>
+                    <li>Weight: simply weigh yourself. You will get the most accurate result weighing yourself in the
+                        morning, before breakfast, and without clothes on.</li>
+                    <li>Height: stand straight, and measure the distance from the floor to the top of your head.
+                        Remember - no shoes!</li>
+                </ul>
+                <p>Body fat % = –44.988 + (0.503 * age) + (10.689 * gender) + (3.172 * BMI) – (0.026 * BMI2) + (0.181 *
+                    BMI * gender) – (0.02 * BMI * age) – (0.005 * BMI2 * gender) + (0.00021 * BMI2 * age)</p>
+                <p>Where:</p>
+                <ul>
+                    <li>Gender value: male = 0 and female = 1</li>
+                    <li>BMI = weight/ height² = kg/m²</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(".progress1").each(function () {
+
+        var $bar = $(this).find(".bar");
+        var $val = $(this).find("span");
+        var perc = parseInt($val.text(), 10);
+
+        $({ p: 0 }).animate({ p: perc }, {
+            duration: 3000,
+            easing: "swing",
+            step: function (p) {
+                $bar.css({
+                    transform: "rotate(" + (45 + (p * 1.8)) + "deg)",
+                    // 100%=180° so: ° = % * 1.8
+                    // 45 is to add the needed rotation to have the green borders at the bottom
+                });
+                $val.text(p | 0);
+            }
+        });
+    });
+</script>
+
+{% endblock body %}

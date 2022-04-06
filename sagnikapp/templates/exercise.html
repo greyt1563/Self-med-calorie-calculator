@@ -1,0 +1,270 @@
+{% extends 'theme/Practice1.html' %}
+{% load static %}
+{% block head %}
+<title>complete nutrition design </title>
+<!-- <link rel="stylesheet" href="{% static 'exercise style.css' %}">  -->
+{% endblock head %}
+
+{% block body %}
+
+<!-- home section starts  -->
+
+<div class="container" id="home">
+    <div class="row">
+        <div class="col-sm-6" style="padding-top: 100px;">
+            <h1>Healthy Living</h1>
+            <h1>Simplified</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem vero? Magnam, est laboriosam!</p>
+            <a href="#" class="btn"> Read More </a>
+        </div>
+        <div class="col-sm-6">
+            <img src="{% static 'excer2.jpeg'%}" alt="" style="    height: 550px;
+            padding-left: 35px;">
+        </div>
+    </div>
+</div>
+
+<!-- home section ends -->
+
+<!-- common section starts -->
+
+
+<div class="container common">
+    <div class="row">
+        <div class="left col-lg-4">
+            <div class="content">
+                <h2>Training</h2>
+                <h2>Programs</h2>
+                <h2>we offer for you</h2>
+            </div>
+
+            <div class="image">
+                <img src="{% static 'exerpic/skip_rope.png'%}" alt="">
+            </div>
+        </div>
+        <div class="box col-lg-8">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="box1">
+                        <h3>Yoga</h3>
+                        <p>Here we have preffered you different yogas for your good health.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box2">
+                        <h3>Fitness</h3>
+                        <p>Here you will get a multiple number of exercises to maintain physical fitness.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box3">
+                        <h3>Muscle</h3>
+                        <p>Here you will get various types of exercises to gain muscle and build body.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br><br>
+
+<div class="container offer">
+    <div class="row">
+        <h5 style="font-size: 2.5rem;">Offers</h5>
+        <div class="col-sm-8">
+            <img src="{% static 'exerpic/Dumbel2.png'%}" style="width: -webkit-fill-available;" alt="">
+
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'exerpic/gym.png'%}" style="width: -webkit-fill-available;" alt="">
+        </div>
+    </div>
+</div>
+
+<br><br>
+<div class="container feature">
+    <div class="row">
+        <h5 style="font-size: 2.5rem;">Popular Excercise</h5>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="arm">
+                    <img src="{% static 'exerpic/arm female.jpg'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Arms</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="chest">
+                    <img src="{% static 'exerpic/chest 1.png'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Chest</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="leg">
+                    <img src="{% static 'exerpic/Leg.jpg'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Leg</h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="MuscleGain">
+                    <img src="{% static 'exerpic/muscle gain 1.png'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Muscle gain</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="Cardio">
+                    <img src="{% static 'exerpic/warm up 1.png'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Cardio</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="loosebellyfat">
+                    <img src="{% static 'exerpic/loose belly fat.jpg'%}" 
+                        class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Loose Belly Fat</h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Workout -->
+
+<div class="container workout">
+    <div class="row">
+        <h5 style="font-size: 2.5rem;">Workout</h5>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="beginner">
+                    <img src="{% static 'exerpic/beginner.jpeg'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Beginner</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="Intermidiate">
+                    <img src="{% static 'exerpic/inter.png'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Intermediate</h5>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="Advanced">
+                    <img src="{% static 'exerpic/advanced.jpg'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Advanced</h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+
+<!-- yoga hoarding -->
+
+<div class="container yoga">
+    <div class="row">
+        <h5 style="font-size: 2.5rem;">Yoga</h5>
+        <div class="col-sm-8">
+            <img src="{% static 'exerpic/Bend.png'%}" alt="">
+
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'exerpic/'%}" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- Meditation -->
+
+<div class="container meditate">
+    <div class="row">
+        <h5 style="font-size: 2.5rem;">Meditation</h5>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="suryanamaskar">
+                    <img src="{% static 'exerpic/surya.png'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Surya Namaskar</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="meditation">
+                    <img src="{% static 'exerpic/stretch.png'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Morning Meditation</h5>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="detox">
+                    <img src="{% static 'exerpic/stretch.png'%}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Yoga Detox</h5>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+{% endblock body %}

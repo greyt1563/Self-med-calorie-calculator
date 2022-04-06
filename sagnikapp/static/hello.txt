@@ -1,0 +1,3 @@
+hello Sagnik!!
+
+{% static 'food/b/Boiled egg.jpg' %}

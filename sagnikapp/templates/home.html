@@ -1,0 +1,294 @@
+{% extends 'theme/Practice1.html' %} {% load static %} {% block head %}
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>complete nutrition design </title>
+<link rel="stylesheet" href="{% static 'home/css/style.css' %}"> {% endblock head %} {% block body %}
+
+<!-- home section starts  -->
+
+<section class="container" id="home">
+    <div class="row g-5">
+        <div class="col-sm-6 ">
+            <img src="{% static 'home/pr.svg' %}" alt="">
+        </div>
+
+        <div class="col-sm-6 " class="content">
+            <h3 style="font-size: 3rem;color: black;font-weight: 600;">Track your</h3>
+            <h3 style="font-size: 3rem;color: black;font-weight: 600;">Active </h3>
+            <h3 style="font-size: 3rem;color: black;font-weight: 600;">Lifestyle </h3>
+
+            <p style="font-size: 1.3rem;">Exercise is King. Nutrition is queen. Put them together and you've got the kingdom!</p>
+            <a href="about" class="btn"> Read More </a>
+        </div>
+    </div>
+</section>
+
+<!-- home section ends -->
+
+<!-- icons section starts  -->
+<section class="container-fluid icons-container px-5" style="background: #191717;padding-top: 75px;
+padding-bottom: 75px;">
+    <div class="row g-5">
+        <div class="col-sm-4">
+            <div class="icons">>
+                <i class="fas fa-users"></i>
+                <h5>Health Calculators</h5>
+                <p>Health status checker</p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="icons">>
+                <i class="fas fa-procedures"></i>
+                <!-- <img src="{% static 'home/b07a81f9434dfb655d08a2b0d4fb8fdc.png' %}" alt=""> -->
+                <h5>Diet Plan</h5>
+                <p>Full diet chart will be provided</p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="icons">>
+                <i class="fas fa-hospital"></i>
+                <h5>Exercise</h5>
+                <p>All types of exercises </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- icons section ends -->
+
+<!-- services section starts  -->
+
+<section class="services container-fluid" id="services">
+    <div class="row g-5">
+        <div class="col-sm-12">
+            <h1 class="heading" style="font-size: 3rem;line-height : 1.8;color: black;text-shadow: .4rem .4rem 0 rgba(0,0,0,.2);"> Track your Health Status </h1>
+            <h3 class="h3-text">We encourage you to not just track your health</h3>
+            <h3 class="h3-text">But to focus on your nutrition as a whole.</h3>
+        </div>
+        <div class="col-sm-6 ">
+            <div class="box">
+                <!-- <i class="fas fa-notes-medical"></i> -->
+                <h3>BMI Calculator</h3>
+                <p>Body Mass Index (BMI) indicates the body fatness of a person . BMI screens for weight categories that may lead to health problems</p>
+                <a href="bmi" class="btn"> Get Started <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+        <div class="col-sm-6 ">
+            <div class="box">
+                <!-- <i class="fas fa-ambulance"></i> -->
+                <h3>Body Fat Calculator</h3>
+                <p>It calculates the amount of fat in percentage present in your body.</p><br>
+                <a href="bfp" class="btn"> Get Started <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+        <div class="col-sm-6 ">
+            <div class="box">
+                <!-- <i class="fas fa-user-md"></i> -->
+                <h3>Calorie Calculator</h3>
+                <p>It calculates the amount of calorie one should intake each day. </p><br>
+                <a href="calorie" class="btn"> Get Started <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+        <div class="col-sm-6 ">
+            <div class="box">
+                <!-- <i class="fas fa-pills"></i> -->
+                <h3>Ideal Weight</h3>
+                <p>It shows the ideal weight one should have acoording to thier height and age.</p>
+                <a href="#" class="btn"> Get Started <span class="fas fa-chevron-right"></span> </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- services section ends -->
+<section class="container-fluid px-5">
+
+    <div class="row">
+        <div class="small-content col-sm-6">
+            <h3>Get your perfect regular diet plan</h3>
+            <p>One of the best ways to lose weight is by changing our diet.
+            </p>
+            <p>Yet, the sheer number of available diet plans may are unsure which one is most suitable, sustainable and effective.</p>
+            <p>Some diets aim to curb our appetite to reduce our food intake, while others suggest restricting intake of calories and either carbs or fat.
+            </p>
+            <a href="calorie" class="btn"> Get Started <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="col-sm-6">
+            <img src="{% static 'home/diet.png' %}" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- about section starts  -->
+
+<section class="container" id="about">
+    <div class="row">
+        <h1 class="heading col-sm-12" style="font-size: 3rem;line-height : 1.8;color: black;text-shadow: .4rem .4rem 0 rgba(0,0,0,.2);"> <span>Diet</span> plan </h1>
+
+        <div class="col-sm-6">
+            <img src="{% static 'home/WhatsApp_Image_2022-01-12_at_5.57.31_PM-removebg-preview.png' %}" alt="">
+        </div>
+
+        <div class="small-content col-sm-6">
+            <h3>We take care of your healthy life</h3>
+            <p>Planning diets refers to determining what usual nutrient intake should be. Regardless of whether one is planning diets for individuals or groups, the goal is to have diets that are nutritionally adequate, or conversely, to ensure that the
+                probability of nutrient inadequacy or excess is acceptably low. A set of scheduled meals in order to achieve different metabolic and health goals, such as weight loss, sugar control, muscle gain.
+            </p>
+            <p>Nutritional considerations are only one component of dietary planning. Other considerations include incorporating food preferences of the individual or group being planned for, and the cost and availability of foods. However, using estimates
+                of nutrient requirements to set intake goals should be part of the planning activity.</p>
+            <!-- <p>It is important to have a balanced diet, with the right amounts of different macro and micronutrients. Having a balanced diet plan leads to sustainable long-term weight loss and optimal health.
+            </p> -->
+            <!-- <a href="calorie" class="btn"> Learn more<span class="fas fa-chevron-right"></span> </a> -->
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- exercise section starts -->
+
+<section class="container-fluid px-5">
+    <div class="row">
+        <div class="small-content col-sm-6">
+            <h3>Regular Exercises (Workout) </h3>
+            <p>Exercise is any bodily activity that enhances or maintains physical fitness and overall health and wellness.</p>
+            <p>It is performed for various reasons, to aid growth and improve strength, prevent aging, develop muscles and the cardiovascular system, hone athletic skills, weight loss or maintenance, improve health, or simply for enjoyment. Many individuals
+                choose to exercise outdoors where they can congregate in groups, socialize, and improve well-being as well as mental health.</p>
+            <a href="#" class="btn"> Get Started <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="col-sm-6">
+            <img src="{% static 'home/exercise.png' %}" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="container" id="about">
+    <div class="row">
+        <h1 class="heading col-sm-12" style="font-size: 3rem;line-height : 1.8;color: black;text-shadow: .4rem .4rem 0 rgba(0,0,0,.2);"> <span>Exercise</span></h1>
+
+        <div class="col-sm-6">
+            <img src="{% static 'home/exer.jpg' %}" alt="">
+        </div>
+
+        <div class="small-content col-sm-6">
+            <h3>Commit to be Fit </h3>
+            <p>Exercise involves engaging in physical activity and increasing the heart rate beyond resting levels. It is an important part of preserving physical and mental health.</p>
+            <p>Whether people engage in light exercise, such as going for a walk, or high intensity activities, for example, uphill cycling or weight training, regular exercise provides a huge range of benefits for the body and mind.Taking part in exercise
+                of any intensity every day is essential for preventing a range of diseases and other health issues</p>
+            <p>Aerobic exercise aims to improve how the body uses oxygen. Most aerobic exercise takes place at average levels of intensity over longer periods.</p>
+            <p>Anaerobic exercise does not use oxygen for energy. People use this type of exercise to build power, strength, and muscle mass.</p>
+            <p>Agility training aims to improve a person's ability to maintain control while speeding up, slowing down, and changing direction.</p>
+            <!-- <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a> -->
+        </div>
+
+    </div>
+
+</section>
+<!-- <section class="fba-container">
+        <div class="fba-image">
+            <img src="{% static 'home/image/about-img.svg' %}" alt="">
+        </div>
+
+        <div class="fba-content">
+            <h3>we take care of your healthy life</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in
+                assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates
+                voluptatibus a nihil temporibus deserunt vel?</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+    </section> -->
+
+
+
+
+
+
+<section class="review container-fluid" id="review">
+    <div class="row box-container">
+        <h1 class="heading col-sm-12"> <span>Developers </span> </h1>
+
+        <div class="col-sm-4">
+            <div class="box">
+                <img src="{% static 'home/image/pic-1 (3).png' %}" alt="">
+                <h3>Sagnik Paul</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text">Hello, my name is Sagnik Paul and I am a student of class 11 of Army Public School Barrackpore. I am the developer of Self Med, a website where you can easily check your health status and other health related options for those who want to become more health conscious. I am from Barrackpore, West Bengal, India. I want to become a web developer.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="box">
+                <img src="{% static 'home/image/pic-2.png' %}" alt="">
+                <h3>Niladri Saha</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text">Hello, my name is Niladri Saha and I am a student of class 11 of Army Public School Barrackpore. I am the developer of Self Med, a website where you can easily check your health status and other health related options for those who want to become more health conscious. I am from Barrackpore, West Bengal, India. </p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="box">
+                <img src="{% static 'home/image/pic-3.png' %}" alt="">
+                <h3>Shuvojit Chowdhury </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- footer section starts  -->
+
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="{% static 'home/js/script.js"></script>
+{% endblock body %}
