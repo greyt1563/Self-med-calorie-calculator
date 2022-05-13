@@ -3,7 +3,7 @@
 {% endblock head %} {% block body %}
 
 <div class="container"><br>
-    <p class="text-center">Your body calorie is <span id="cal">{{cal}}</span></p><br>
+    <p class="text-center">Your body calorie is <span id="cal" >{{cal}}</span></p><br>
     <button class="accordion">Breakfast</button>
     <div class="panel">
         <table class="table" id="breakfast" border="2" width=" 100%">
@@ -20,211 +20,211 @@
                 <th>Total calorie</th>
             </tr>
             <tr id="Oats" class="tr">
-                <td id="no">1</td>
+                <td id="no" class="no">1</td>
                 <td id="pic"><img src="{% static 'food/b/Steel-Cut-Oats-001.jpg' %}"></td>
-                <td id="name">Oats</td>
-                <td id="cal">389</td>
-                <td id="fat">6.52 </td>
-                <td id="pro">13.15 </td>
+                <td id="name" class="name">Oats</td>
+                <td id="calc" class="calc">389</td>
+                <td id="fat" class="fat">6.52 </td>
+                <td id="pro" class="pro">13.15 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Oats')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Oats')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Oats')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Boiledegg" class="tr">
-                <td id="no">2</td>
+                <td id="no" class="no">2</td>
                 <td id="pic"><img src="{% static 'food/b/Boiled egg.jpg' %}"></td>
-                <td id="name">Boiled egg </td>
-                <td id="cal">78 </td>
-                <td id="fat">5.3 </td>
-                <td id="pro">6.3 </td>
+                <td id="name" class="name">Boiled egg </td>
+                <td id="calc" class="calc">78 </td>
+                <td id="fat" class="fat">5.3 </td>
+                <td id="pro" class="pro">6.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Boiledegg')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Boiledegg')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Boiledegg')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Tea" class="tr">
-                <td id="no">3</td>
+                <td id="no" class="no">3</td>
                 <td id="pic"><img src="{% static 'food/b/Tea-.jpg' %}"></td>
-                <td id="name">Tea </td>
-                <td id="cal">90 </td>
-                <td id="fat">0.2 </td>
-                <td id="pro">0 </td>
+                <td id="name" class="name">Tea </td>
+                <td id="calc" class="calc">90 </td>
+                <td id="fat" class="fat">0.2 </td>
+                <td id="pro" class="pro">0 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Tea')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Tea')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Tea')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="coffee" class="tr">
-                <td id="no">4</td>
+                <td id="no" class="no">4</td>
                 <td id="pic"><img src="{% static 'food/b/espresso-coffee-cup-with-beans-on-table-restricted.jpg' %}">
                 </td>
-                <td id="name">coffee</td>
-                <td id="cal">98 </td>
-                <td id="fat">0 </td>
-                <td id="pro">0.3 </td>
+                <td id="name" class="name">coffee</td>
+                <td id="calc" class="calc">98 </td>
+                <td id="fat" class="fat">0 </td>
+                <td id="pro" class="pro">0.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('coffee')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('coffee')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('coffee')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Poha" class="tr">
-                <td id="no">5</td>
+                <td id="no" class="no">5</td>
                 <td id="pic"><img src="{% static 'food/b/poha.jpg' %}"></td>
-                <td id="name">Poha </td>
-                <td id="cal">160 </td>
-                <td id="fat">7.9 </td>
-                <td id="pro">2.2 </td>
+                <td id="name" class="name">Poha </td>
+                <td id="calc" class="calc">160 </td>
+                <td id="fat" class="fat">7.9 </td>
+                <td id="pro" class="pro">2.2 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Poha')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Poha')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Poha')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Idli" class="tr">
-                <td id="no">6</td>
+                <td id="no" class="no">6</td>
                 <td id="pic"><img src="{% static 'food/b/idli-56a510b63df78cf772862c34.jpg' %}"></td>
-                <td id="name">Idli </td>
-                <td id="cal">33 </td>
-                <td id="fat">0.1 </td>
-                <td id="pro">1 </td>
+                <td id="name" class="name">Idli </td>
+                <td id="calc" class="calc">33 </td>
+                <td id="fat" class="fat">0.1 </td>
+                <td id="pro" class="pro">1 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Idli')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Idli')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Idli')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Masaladosa" class="tr">
-                <td id="no">7</td>
+                <td id="no" class="no">7</td>
                 <td id="pic"><img src="{% static 'food/b/maxresdefault.jpg' %}"></td>
-                <td id="name">Masala dosa </td>
-                <td id="cal">168 </td>
-                <td id="fat">3.7 </td>
-                <td id="pro">3.9 </td>
+                <td id="name" class="name">Masala dosa </td>
+                <td id="calc" class="calc">168 </td>
+                <td id="fat" class="fat">3.7 </td>
+                <td id="pro" class="pro">3.9 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Masaladosa')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Masaladosa')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Masaladosa')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Puri" class="tr">
-                <td id="no">8</td>
+                <td id="no" class="no">8</td>
                 <td id="pic"><img src="{% static 'food/b/rava-poori-puri-recipe.jpg' %}"></td>
-                <td id="name">Puri </td>
-                <td id="cal">101 </td>
-                <td id="fat">7.4 </td>
-                <td id="pro">1.3 </td>
+                <td id="name" class="name">Puri </td>
+                <td id="calc" class="calc">101 </td>
+                <td id="fat" class="fat">7.4 </td>
+                <td id="pro" class="pro">1.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Puri')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Puri')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Puri')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Roti" class="tr">
-                <td id="no">9</td>
+                <td id="no" class="no">9</td>
                 <td id="pic"><img src="{% static 'food/b/download.jpg' %}"></td>
-                <td id="name">Roti </td>
-                <td id="cal">71 </td>
-                <td id="fat">0.4 </td>
-                <td id="pro">3 </td>
+                <td id="name" class="name">Roti </td>
+                <td id="calc" class="calc">71 </td>
+                <td id="fat" class="fat">0.4 </td>
+                <td id="pro" class="pro">3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Roti')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Roti')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Roti')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Paratha" class="tr">
-                <td id="no">10</td>
+                <td id="no" class="no">10</td>
                 <td id="pic"><img src="{% static 'food/b/Whole-wheat-Paratha.jpg' %}"></td>
-                <td id="name">Paratha </td>
-                <td id="cal">126 </td>
-                <td id="fat">6.2 </td>
-                <td id="pro">2.6 </td>
+                <td id="name" class="name">Paratha </td>
+                <td id="calc" class="calc">126 </td>
+                <td id="fat" class="fat">6.2 </td>
+                <td id="pro" class="pro">2.6 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Paratha')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Paratha')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Paratha')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="AlooParatha" class="tr">
-                <td id="no">11</td>
+                <td id="no" class="no">11</td>
                 <td id="pic"><img src="{% static 'food/b/53109843.jpg' %}"></td>
-                <td id="name">Aloo Paratha </td>
-                <td id="cal">177 </td>
-                <td id="fat">8.5 </td>
-                <td id="pro">3.3 </td>
+                <td id="name" class="name">Aloo Paratha </td>
+                <td id="calc" class="calc">177 </td>
+                <td id="fat" class="fat">8.5 </td>
+                <td id="pro" class="pro">3.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('AlooParatha')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('AlooParatha')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('AlooParatha')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Thepla" class="tr">
-                <td id="no">12</td>
+                <td id="no" class="no">12</td>
                 <td id="pic"><img src="{% static 'food/b/unnamed.jpg' %}"></td>
-                <td id="name">Thepla </td>
-                <td id="cal">120 </td>
-                <td id="fat">6.5 </td>
-                <td id="pro">2.3 </td>
+                <td id="name" class="name">Thepla </td>
+                <td id="calc" class="calc">120 </td>
+                <td id="fat" class="fat">6.5 </td>
+                <td id="pro" class="pro">2.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Thepla')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Thepla')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Thepla')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Upma" class="tr">
-                <td id="no">13</td>
+                <td id="no" class="no">13</td>
                 <td id="pic"><img src="{% static 'food/b/Broccoli-Suji-Upma-Soft-Recipe.jpg' %}"></td>
-                <td id="name">Upma </td>
-                <td id="cal">192 </td>
-                <td id="fat">5.8 </td>
-                <td id="pro">4 </td>
+                <td id="name" class="name">Upma </td>
+                <td id="calc" class="calc">192 </td>
+                <td id="fat" class="fat">5.8 </td>
+                <td id="pro" class="pro">4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Upma')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Upma')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Upma')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="EggOmlette" class="tr">
-                <td id="no">14</td>
+                <td id="no" class="no">14</td>
                 <td id="pic"><img src="{% static 'food/b/omeltte-recipe.jpg' %}"></td>
-                <td id="name">Egg Omlette </td>
-                <td id="cal">94 </td>
-                <td id="fat">7.1 </td>
-                <td id="pro">6.4 </td>
+                <td id="name" class="name">Egg Omlette </td>
+                <td id="calc" class="calc">94 </td>
+                <td id="fat" class="fat">7.1 </td>
+                <td id="pro" class="pro">6.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('EggOmlette')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('EggOmlette')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('EggOmlette')">-</button>
                 </td>
@@ -250,451 +250,451 @@
                 <th>Total calorie</th>
             </tr>
             <tr id="LemonRice" class="tr">
-                <td id="no">1</td>
+                <td id="no" class="no">1</td>
                 <td id="pic"><img src="{% static 'food/l/turmeric-lemon-rice-recipe-02.jpg' %}"></td>
-                <td id="name">Lemon Rice </td>
-                <td id="cal">221 </td>
-                <td id="fat">6.6 </td>
-                <td id="pro">2.9 </td>
+                <td id="name" class="name">Lemon Rice </td>
+                <td id="calc" class="calc">221 </td>
+                <td id="fat" class="fat">6.6 </td>
+                <td id="pro" class="pro">2.9 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('LemonRice')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('LemonRice')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('LemonRice')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="VegBiriyani" class="tr">
-                <td id="no">2</td>
+                <td id="no" class="no">2</td>
                 <td id="pic"><img src="{% static 'food/l/Veg Biriyani 2-3.jpg' %}"></td>
-                <td id="name">Veg Biriyani </td>
-                <td id="cal">241 </td>
-                <td id="fat">25 </td>
-                <td id="pro">9.8 </td>
+                <td id="name" class="name">Veg Biriyani </td>
+                <td id="calc" class="calc">241 </td>
+                <td id="fat" class="fat">25 </td>
+                <td id="pro" class="pro">9.8 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('VegBiriyani')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('VegBiriyani')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('VegBiriyani')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="ChickenBiryani" class="tr">
-                <td id="no">3</td>
+                <td id="no" class="no">3</td>
                 <td id="pic"><img src="{% static 'food/l/Kolkata-chicken-biryani.jpg' %}"></td>
-                <td id="name">Chicken Biryani </td>
-                <td id="cal">485 </td>
-                <td id="fat">9.4 </td>
-                <td id="pro">20 </td>
+                <td id="name" class="name">Chicken Biryani </td>
+                <td id="calc" class="calc">485 </td>
+                <td id="fat" class="fat">9.4 </td>
+                <td id="pro" class="pro">20 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('ChickenBiryani')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('ChickenBiryani')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('ChickenBiryani')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="MuttonBiryani" class="tr">
-                <td id="no">4</td>
+                <td id="no" class="no">4</td>
                 <td id="pic"><img src="{% static 'food/l/mutton biri(1).jpg' %}"></td>
-                <td id="name">Mutton Biryani </td>
-                <td id="cal">642 </td>
-                <td id="fat">37 </td>
-                <td id="pro">38 </td>
+                <td id="name" class="name">Mutton Biryani </td>
+                <td id="calc" class="calc">642 </td>
+                <td id="fat" class="fat">37 </td>
+                <td id="pro" class="pro">38 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('MuttonBiryani')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('MuttonBiryani')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('MuttonBiryani')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="AlooBiryani" class="tr">
-                <td id="no">5</td>
+                <td id="no" class="no">5</td>
                 <td id="pic"><img src="{% static 'food/l/aloo biriyani.PNG' %}"></td>
-                <td id="name">Aloo Biryani </td>
-                <td id="cal">134 </td>
-                <td id="fat">18.8 </td>
-                <td id="pro">5 </td>
+                <td id="name" class="name">Aloo Biryani </td>
+                <td id="calc" class="calc">134 </td>
+                <td id="fat" class="fat">18.8 </td>
+                <td id="pro" class="pro">5 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('AlooBiryani')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('AlooBiryani')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('AlooBiryani')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="BhindiMasala" class="tr">
-                <td id="no">6</td>
+                <td id="no" class="no">6</td>
                 <td id="pic"><img src="{% static 'food/l/Bhindi-Masala-500x500.jpg' %}"></td>
-                <td id="name">Bhindi Masala </td>
-                <td id="cal">83 </td>
-                <td id="fat">1.4 </td>
-                <td id="pro">3.6 </td>
+                <td id="name" class="name">Bhindi Masala </td>
+                <td id="calc" class="calc">83 </td>
+                <td id="fat" class="fat">1.4 </td>
+                <td id="pro" class="pro">3.6 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('BhindiMasala')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('BhindiMasala')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('BhindiMasala')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Plainrice" class="tr">
-                <td id="no">7</td>
+                <td id="no" class="no">7</td>
                 <td id="pic"><img src="{% static 'food/l/Plain-Rice-Recipe.jpg' %}"></td>
-                <td id="name">Plain rice </td>
-                <td id="cal">123 </td>
-                <td id="fat">0.8 </td>
-                <td id="pro">4.4 </td>
+                <td id="name" class="name">Plain rice </td>
+                <td id="calc" class="calc">123 </td>
+                <td id="fat" class="fat">0.8 </td>
+                <td id="pro" class="pro">4.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Plainrice')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Plainrice')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Plainrice')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Dal" class="tr">
-                <td id="no">8</td>
+                <td id="no" class="no">8</td>
                 <td id="pic"><img src="{% static 'food/l/dal-fry-recipe-1.jpg' %}"></td>
-                <td id="name"> Dal </td>
-                <td id="cal">124</td>
-                <td id="fat">2.9 </td>
-                <td id="pro">7.2 </td>
+                <td id="name" class="name"> Dal </td>
+                <td id="calc" class="calc">124</td>
+                <td id="fat" class="fat">2.9 </td>
+                <td id="pro" class="pro">7.2 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Dal')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Dal')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Dal')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="SoyabeanCurry" class="tr">
-                <td id="no">9</td>
+                <td id="no" class="no">9</td>
                 <td id="pic"><img src="{% static 'food/l/Soyabean 1).jpg' %}"></td>
-                <td id="name">Soyabean Curry </td>
-                <td id="cal">156 </td>
-                <td id="fat">8.6 </td>
-                <td id="pro">32.7 </td>
+                <td id="name" class="name">Soyabean Curry </td>
+                <td id="calc" class="calc">156 </td>
+                <td id="fat" class="fat">8.6 </td>
+                <td id="pro" class="pro">32.7 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('SoyabeanCurry')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('SoyabeanCurry')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('SoyabeanCurry')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="EggCurry" class="tr">
-                <td id="no">10</td>
+                <td id="no" class="no">10</td>
                 <td id="pic"><img src="{% static 'food/l/Egg Currye.jpg' %}"></td>
-                <td id="name">Egg Curry </td>
-                <td id="cal">156 </td>
-                <td id="fat">13 </td>
-                <td id="pro">10 </td>
+                <td id="name" class="name">Egg Curry </td>
+                <td id="calc" class="calc">156 </td>
+                <td id="fat" class="fat">13 </td>
+                <td id="pro" class="pro">10 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('EggCurry')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('EggCurry')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('EggCurry')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="FishCurry" class="tr">
-                <td id="no">11</td>
+                <td id="no" class="no">11</td>
                 <td id="pic"><img src="{% static 'food/l/Kerala-Fish-Curry.jpg' %}"></td>
-                <td id="name">Fish Curry </td>
-                <td id="cal">217 </td>
-                <td id="fat">9 </td>
-                <td id="pro">37.2 </td>
+                <td id="name" class="name">Fish Curry </td>
+                <td id="calc" class="calc">217 </td>
+                <td id="fat" class="fat">9 </td>
+                <td id="pro" class="pro">37.2 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('FishCurry')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('FishCurry')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('FishCurry')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="ChickenCurry" class="tr">
-                <td id="no">12</td>
+                <td id="no" class="no">12</td>
                 <td id="pic"><img src="{% static 'food/l/Instant-Pot-Chicken-Curry-Recipe.jpg' %}"></td>
-                <td id="name">Chicken Curry </td>
-                <td id="cal">273 </td>
-                <td id="fat">13.4 </td>
-                <td id="pro">29 </td>
+                <td id="name" class="name">Chicken Curry </td>
+                <td id="calc" class="calc">273 </td>
+                <td id="fat" class="fat">13.4 </td>
+                <td id="pro" class="pro">29 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('ChickenCurry')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('ChickenCurry')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('ChickenCurry')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="PaneerCurryMasala" class="tr">
-                <td id="no">13</td>
+                <td id="no" class="no">13</td>
                 <td id="pic"><img src="{% static 'food/l/Paneer Curry Masala1).jpg' %}"></td>
-                <td id="name">Paneer Curry Masala </td>
-                <td id="cal">290 </td>
-                <td id="fat">25.2 </td>
-                <td id="pro">8.6 </td>
+                <td id="name" class="name">Paneer Curry Masala </td>
+                <td id="calc" class="calc">290 </td>
+                <td id="fat" class="fat">25.2 </td>
+                <td id="pro" class="pro">8.6 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('PaneerCurryMasala')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('PaneerCurryMasala')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('PaneerCurryMasala')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="MuttonCurry" class="tr">
-                <td id="no">14</td>
+                <td id="no" class="no">14</td>
                 <td id="pic"><img src="{% static 'food/l/mutton curryjpg.jpg' %}"></td>
-                <td id="name">Mutton Curry </td>
-                <td id="cal">295 </td>
-                <td id="fat">21 </td>
-                <td id="pro">32 </td>
+                <td id="name" class="name">Mutton Curry </td>
+                <td id="calc" class="calc">295 </td>
+                <td id="fat" class="fat">21 </td>
+                <td id="pro" class="pro">32 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('MuttonCurry')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('MuttonCurry')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('MuttonCurry')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="PostorBora" class="tr">
-                <td id="no">15</td>
+                <td id="no" class="no">15</td>
                 <td id="pic"><img src="{% static 'food/l/Postor Bora 1).jpg' %}"></td>
-                <td id="name">Postor Bora </td>
-                <td id="cal">187 </td>
-                <td id="fat">13 </td>
-                <td id="pro">6 </td>
+                <td id="name" class="name">Postor Bora </td>
+                <td id="calc" class="calc">187 </td>
+                <td id="fat" class="fat">13 </td>
+                <td id="pro" class="pro">6 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('PostorBora')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('PostorBora')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('PostorBora')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="AlooPosto" class="tr">
-                <td id="no">16</td>
+                <td id="no" class="no">16</td>
                 <td id="pic"><img src="{% static 'food/l/Aloo Postojpg.jpg' %}"></td>
-                <td id="name">Aloo Posto </td>
-                <td id="cal">112 </td>
-                <td id="fat">2.6 </td>
-                <td id="pro">1.5 </td>
+                <td id="name" class="name">Aloo Posto </td>
+                <td id="calc" class="calc">112 </td>
+                <td id="fat" class="fat">2.6 </td>
+                <td id="pro" class="pro">1.5 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('AlooPosto')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('AlooPosto')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('AlooPosto')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="AlooBhaja" class="tr">
-                <td id="no">17</td>
+                <td id="no" class="no">17</td>
                 <td id="pic"><img src="{% static 'food/l/Aloo Bhaja 7858.jpg' %}"></td>
-                <td id="name">Aloo Bhaja </td>
-                <td id="cal">220 </td>
-                <td id="fat">7.8 </td>
-                <td id="pro">2.7 </td>
+                <td id="name" class="name">Aloo Bhaja </td>
+                <td id="calc" class="calc">220 </td>
+                <td id="fat" class="fat">7.8 </td>
+                <td id="pro" class="pro">2.7 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('AlooBhaja')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('AlooBhaja')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('AlooBhaja')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="BegunBhaja" class="tr">
-                <td id="no">18</td>
+                <td id="no" class="no">18</td>
                 <td id="pic"><img src="{% static 'food/l/Begun Bhaja6.jpg' %}"></td>
-                <td id="name">Begun Bhaja </td>
-                <td id="cal">43 </td>
-                <td id="fat">2.4 </td>
-                <td id="pro">1.5 </td>
+                <td id="name" class="name">Begun Bhaja </td>
+                <td id="calc" class="calc">43 </td>
+                <td id="fat" class="fat">2.4 </td>
+                <td id="pro" class="pro">1.5 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('BegunBhaja')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('BegunBhaja')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('BegunBhaja')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Palangshakbhaja" class="tr">
-                <td id="no">19</td>
+                <td id="no" class="no">19</td>
                 <td id="pic"><img src="{% static 'food/l/palong-shaak-bhaja-bengali-style-spinach-stir-fry-recipe-recipe-main-photo.jpg' %}">
                 </td>
-                <td id="name">Palang shak bhaja </td>
-                <td id="cal">87 </td>
-                <td id="fat">4.6 </td>
-                <td id="pro">3.9 </td>
+                <td id="name" class="name">Palang shak bhaja </td>
+                <td id="calc" class="calc">87 </td>
+                <td id="fat" class="fat">4.6 </td>
+                <td id="pro" class="pro">3.9 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Palangshakbhaja')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Palangshakbhaja')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Palangshakbhaja')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Pulao" class="tr">
-                <td id="no">20</td>
+                <td id="no" class="no">20</td>
                 <td id="pic"><img src="{% static 'food/l/veg-pulao-recipe-735x490.jpg' %}"></td>
-                <td id="name">Pulao </td>
-                <td id="cal">350 </td>
-                <td id="fat">5.5 </td>
-                <td id="pro">7.6 </td>
+                <td id="name" class="name">Pulao </td>
+                <td id="calc" class="calc">350 </td>
+                <td id="fat" class="fat">5.5 </td>
+                <td id="pro" class="pro">7.6 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Pulao')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Pulao')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Pulao')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="DalKhichdi" class="tr">
-                <td id="no">21</td>
+                <td id="no" class="no">21</td>
                 <td id="pic"><img src="{% static 'food/l/moong-dal-khichdi-recipe-1.jpg' %}"></td>
-                <td id="name">Dal Khichdi </td>
-                <td id="cal">320 </td>
-                <td id="fat">4.2 </td>
-                <td id="pro">12.4 </td>
+                <td id="name" class="name">Dal Khichdi </td>
+                <td id="calc" class="calc">320 </td>
+                <td id="fat" class="fat">4.2 </td>
+                <td id="pro" class="pro">12.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('DalKhichdi')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('DalKhichdi')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('DalKhichdi')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="FriedRice" class="tr">
-                <td id="no">22</td>
+                <td id="no" class="no">22</td>
                 <td id="pic"><img src="{% static 'food/l/veg-fried-rice-recipe.jpg' %}"></td>
-                <td id="name">Fried Rice </td>
-                <td id="cal">163 </td>
-                <td id="fat">12.6 </td>
-                <td id="pro">5.5 </td>
+                <td id="name" class="name">Fried Rice </td>
+                <td id="calc" class="calc">163 </td>
+                <td id="fat" class="fat">12.6 </td>
+                <td id="pro" class="pro">5.5 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('FriedRice')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('FriedRice')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('FriedRice')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="ShakBhaja" class="tr">
-                <td id="no">23</td>
+                <td id="no" class="no">23</td>
                 <td id="pic"><img src="{% static 'food/l/Saag Bhaja141633_1.jpg' %}"></td>
-                <td id="name">Shak Bhaja </td>
-                <td id="cal">64 </td>
-                <td id="fat">7.1 </td>
-                <td id="pro">1.5 </td>
+                <td id="name" class="name">Shak Bhaja </td>
+                <td id="calc" class="calc">64 </td>
+                <td id="fat" class="fat">7.1 </td>
+                <td id="pro" class="pro">1.5 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('ShakBhaja')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('ShakBhaja')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('ShakBhaja')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Boiledegg" class="tr">
-                <td id="no">24</td>
+                <td id="no" class="no">24</td>
                 <td id="pic"><img src="{% static 'food/l/Boiled egg.jpg' %}"></td>
-                <td id="name">Boiled egg </td>
-                <td id="cal">78 </td>
-                <td id="fat">5.3 </td>
-                <td id="pro">6.3 </td>
+                <td id="name" class="name">Boiled egg </td>
+                <td id="calc" class="calc">78 </td>
+                <td id="fat" class="fat">5.3 </td>
+                <td id="pro" class="pro">6.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Boiledegg')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Boiledegg')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Boiledegg')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="DhokarDalna" class="tr">
-                <td id="no">25</td>
+                <td id="no" class="no">25</td>
                 <td id="pic"><img src="{% static 'food/l/ovrgh4r_dhoke-dalna_625x300_04_April_19.jpg' %}"></td>
-                <td id="name">Dhokar Dalna </td>
-                <td id="cal">165 </td>
-                <td id="fat">3.5 </td>
-                <td id="pro">10 </td>
+                <td id="name" class="name">Dhokar Dalna </td>
+                <td id="calc" class="calc">165 </td>
+                <td id="fat" class="fat">3.5 </td>
+                <td id="pro" class="pro">10 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('DhokarDalna')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('DhokarDalna')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('DhokarDalna')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="TomatoChutney" class="tr">
-                <td id="no">26</td>
+                <td id="no" class="no">26</td>
                 <td id="pic"><img src="{% static 'food/l/Tomato-Garlic-Chutney.jpg' %}"></td>
-                <td id="name">Tomato Chutney </td>
-                <td id="cal">34 </td>
-                <td id="fat">0.1 </td>
-                <td id="pro">0.3 </td>
+                <td id="name" class="name">Tomato Chutney </td>
+                <td id="calc" class="calc">34 </td>
+                <td id="fat" class="fat">0.1 </td>
+                <td id="pro" class="pro">0.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('TomatoChutney')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('TomatoChutney')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('TomatoChutney')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Papad" class="tr">
-                <td id="no">27</td>
+                <td id="no" class="no">27</td>
                 <td id="pic"><img src="{% static 'food/l/Papad1296.jpg' %}"></td>
-                <td id="name">Papad </td>
-                <td id="cal">29 </td>
-                <td id="fat">1.1 </td>
-                <td id="pro">1.3 </td>
+                <td id="name" class="name">Papad </td>
+                <td id="calc" class="calc">29 </td>
+                <td id="fat" class="fat">1.1 </td>
+                <td id="pro" class="pro">1.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Papad')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Papad')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Papad')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="DumAloo" class="tr">
-                <td id="no">28</td>
+                <td id="no" class="no">28</td>
                 <td id="pic"><img src="{% static 'food/l/Dum-Aloo-Recipe-Step-By-Step-Instructions.jpg' %}"></td>
-                <td id="name">Dum Aloo </td>
-                <td id="cal">350 </td>
-                <td id="fat">40 </td>
-                <td id="pro">6 </td>
+                <td id="name" class="name">Dum Aloo </td>
+                <td id="calc" class="calc">350 </td>
+                <td id="fat" class="fat">40 </td>
+                <td id="pro" class="pro">6 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('DumAloo')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('DumAloo')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('DumAloo')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Salad" class="tr">
-                <td id="no">29</td>
+                <td id="no" class="no">29</td>
                 <td id="pic"><img src="{% static 'food/l/GREEN-CORAL-SALAD-FEATURED-1.jpg' %}"></td>
-                <td id="name">Salad </td>
-                <td id="cal">7 </td>
-                <td id="fat">0.1 </td>
-                <td id="pro">0.4 </td>
+                <td id="name" class="name">Salad </td>
+                <td id="calc" class="calc">7 </td>
+                <td id="fat" class="fat">0.1 </td>
+                <td id="pro" class="pro">0.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Salad')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Salad')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Salad')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="EggOmlette1" class="tr">
-                <td id="no">30</td>
+                <td id="no" class="no">30</td>
                 <td id="pic"><img src="{% static 'food/l/omeltte-recipe.jpg' %}"></td>
-                <td id="name">Egg Omlette </td>
-                <td id="cal">94 </td>
-                <td id="fat">7.1 </td>
-                <td id="pro">6.4 </td>
+                <td id="name" class="name">Egg Omlette </td>
+                <td id="calc" class="calc">94 </td>
+                <td id="fat" class="fat">7.1 </td>
+                <td id="pro" class="pro">6.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('EggOmlette1')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('EggOmlette1')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('EggOmlette1')">-</button>
                 </td>
@@ -720,255 +720,255 @@
                 <th>Total calorie</th>
             </tr>
             <tr id="Pasta" class="tr">
-                <td id="no">1</td>
+                <td id="no" class="no">1</td>
                 <td id="pic"><img src="{% static 'food/t/pasta1).jpg' %}"></td>
-                <td id="name">Pasta </td>
-                <td id="cal">196 </td>
-                <td id="fat">1.2 </td>
-                <td id="pro">7.2 </td>
+                <td id="name" class="name">Pasta </td>
+                <td id="calc" class="calc">196 </td>
+                <td id="fat" class="fat">1.2 </td>
+                <td id="pro" class="pro">7.2 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Pasta')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Pasta')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Pasta')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Eggroll" class="tr">
-                <td id="no">2</td>
+                <td id="no" class="no">2</td>
                 <td id="pic"><img src="{% static 'food/t/Kolkata-Style-Egg-Roll.jpg' %}"></td>
-                <td id="name"> Egg roll </td>
-                <td id="cal">196 </td>
-                <td id="fat">11 </td>
-                <td id="pro">7.4 </td>
+                <td id="name" class="name"> Egg roll </td>
+                <td id="calc" class="calc">196 </td>
+                <td id="fat" class="fat">11 </td>
+                <td id="pro" class="pro">7.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Eggroll')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Eggroll')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Eggroll')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Chickenroll" class="tr">
-                <td id="no">3</td>
+                <td id="no" class="no">3</td>
                 <td id="pic"><img src="{% static 'food/t/Chicken roll1).jpg' %}"></td>
-                <td id="name">Chicken roll </td>
-                <td id="cal">240 </td>
-                <td id="fat">3.7 </td>
-                <td id="pro">8.4 </td>
+                <td id="name" class="name">Chicken roll </td>
+                <td id="calc" class="calc">240 </td>
+                <td id="fat" class="fat">3.7 </td>
+                <td id="pro" class="pro">8.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Chickenroll')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Chickenroll')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Chickenroll')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Eggchowmein" class="tr">
-                <td id="no">4</td>
+                <td id="no" class="no">4</td>
                 <td id="pic"><img src="{% static 'food/t/Egg chow mein1).jpg' %}"></td>
-                <td id="name">Egg chow mein </td>
-                <td id="cal">237 </td>
-                <td id="fat">3 </td>
-                <td id="pro">11 </td>
+                <td id="name" class="name">Egg chow mein </td>
+                <td id="calc" class="calc">237 </td>
+                <td id="fat" class="fat">3 </td>
+                <td id="pro" class="pro">11 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Eggchowmein')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Eggchowmein')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Eggchowmein')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Chickenchowmein" class="tr">
-                <td id="no">5</td>
+                <td id="no" class="no">5</td>
                 <td id="pic"><img src="{% static 'food/t/Chicken chow mein1).jpg' %}"></td>
-                <td id="name">Chicken chow mein </td>
-                <td id="cal">300 </td>
-                <td id="fat">15 </td>
-                <td id="pro">18 </td>
+                <td id="name" class="name">Chicken chow mein </td>
+                <td id="calc" class="calc">300 </td>
+                <td id="fat" class="fat">15 </td>
+                <td id="pro" class="pro">18 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Chickenchowmein')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Chickenchowmein')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Chickenchowmein')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Mughlai" class="tr">
-                <td id="no">6</td>
+                <td id="no" class="no">6</td>
                 <td id="pic"><img src="{% static 'food/t/Tourism-Mughlai-Paratha.jpg' %}"></td>
-                <td id="name">Mughlai </td>
-                <td id="cal">150 </td>
-                <td id="fat">1.3 </td>
-                <td id="pro">4 </td>
+                <td id="name" class="name">Mughlai </td>
+                <td id="calc" class="calc">150 </td>
+                <td id="fat" class="fat">1.3 </td>
+                <td id="pro" class="pro">4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Mughlai')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Mughlai')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Mughlai')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Fishcutlet" class="tr">
-                <td id="no">7</td>
+                <td id="no" class="no">7</td>
                 <td id="pic"><img src="{% static 'food/t/Fish cutletjpg.jpg' %}"></td>
-                <td id="name">Fish cutlet </td>
-                <td id="cal">96 </td>
-                <td id="fat">2 </td>
-                <td id="pro">5 </td>
+                <td id="name" class="name">Fish cutlet </td>
+                <td id="calc" class="calc">96 </td>
+                <td id="fat" class="fat">2 </td>
+                <td id="pro" class="pro">5 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Fishcutlet')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Fishcutlet')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Fishcutlet')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Vegmomos" class="tr">
-                <td id="no">8</td>
+                <td id="no" class="no">8</td>
                 <td id="pic"><img src="{% static 'food/t/noida-veg-momos.jpg' %}"></td>
-                <td id="name">Veg momos </td>
-                <td id="cal">250 </td>
-                <td id="fat">8.8 </td>
-                <td id="pro">5.4 </td>
+                <td id="name" class="name">Veg momos </td>
+                <td id="calc" class="calc">250 </td>
+                <td id="fat" class="fat">8.8 </td>
+                <td id="pro" class="pro">5.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Vegmomos')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Vegmomos')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Vegmomos')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Chickenmomos" class="tr">
-                <td id="no">9</td>
+                <td id="no" class="no">9</td>
                 <td id="pic"><img src="{% static 'food/t/chicken momos1).jpg' %}"></td>
-                <td id="name">Chicken momos </td>
-                <td id="cal">370 </td>
-                <td id="fat">18 </td>
-                <td id="pro">13.8 </td>
+                <td id="name" class="name">Chicken momos </td>
+                <td id="calc" class="calc">370 </td>
+                <td id="fat" class="fat">18 </td>
+                <td id="pro" class="pro">13.8 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Chickenmomos')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Chickenmomos')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Chickenmomos')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Ghuni" class="tr">
-                <td id="no">10</td>
+                <td id="no" class="no">10</td>
                 <td id="pic"><img src="{% static 'food/t/Street-Style-Ghugni-Recipe.jpg' %}"></td>
-                <td id="name">Ghuni </td>
-                <td id="cal">140 </td>
-                <td id="fat">2.3 </td>
-                <td id="pro">7.8 </td>
+                <td id="name" class="name">Ghuni </td>
+                <td id="calc" class="calc">140 </td>
+                <td id="fat" class="fat">2.3 </td>
+                <td id="pro" class="pro">7.8 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Ghuni')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Ghuni')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Ghuni')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Panipuri" class="tr">
-                <td id="no">11</td>
+                <td id="no" class="no">11</td>
                 <td id="pic"><img src="{% static 'food/t/pani-puri.jpg' %}"></td>
-                <td id="name">Panipuri </td>
-                <td id="cal">100 </td>
-                <td id="fat">8 </td>
-                <td id="pro">2 </td>
+                <td id="name" class="name">Panipuri </td>
+                <td id="calc" class="calc">100 </td>
+                <td id="fat" class="fat">8 </td>
+                <td id="pro" class="pro">2 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Panipuri')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Panipuri')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Panipuri')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Samosa" class="tr">
-                <td id="no">12</td>
+                <td id="no" class="no">12</td>
                 <td id="pic"><img src="{% static 'food/t/samosa-recipe-step-by-step-instructions.jpg' %}"></td>
-                <td id="name">Samosa </td>
-                <td id="cal">91 </td>
-                <td id="fat">6 </td>
-                <td id="pro">1.4 </td>
+                <td id="name" class="name">Samosa </td>
+                <td id="calc" class="calc">91 </td>
+                <td id="fat" class="fat">6 </td>
+                <td id="pro" class="pro">1.4 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Samosa')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Samosa')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Samosa')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="VegetableSoup" class="tr">
-                <td id="no">13</td>
+                <td id="no" class="no">13</td>
                 <td id="pic"><img src="{% static 'food/t/vegetable_soup.jpg' %}"></td>
-                <td id="name">Vegetable Soup </td>
-                <td id="cal">80 </td>
-                <td id="fat">3.8 </td>
-                <td id="pro">5.8 </td>
+                <td id="name" class="name">Vegetable Soup </td>
+                <td id="calc" class="calc">80 </td>
+                <td id="fat" class="fat">3.8 </td>
+                <td id="pro" class="pro">5.8 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('VegetableSoup')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('VegetableSoup')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('VegetableSoup')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="ChickenSoup" class="tr">
-                <td id="no">14</td>
+                <td id="no" class="no">14</td>
                 <td id="pic"><img src="{% static 'food/t/Rotisserie_Chicken_Noodle_Soup_0003-S-1-2000.jpg' %}"></td>
-                <td id="name">Chicken Soup </td>
-                <td id="cal">160 </td>
-                <td id="fat">3.7 </td>
-                <td id="pro">10 </td>
+                <td id="name" class="name">Chicken Soup </td>
+                <td id="calc" class="calc">160 </td>
+                <td id="fat" class="fat">3.7 </td>
+                <td id="pro" class="pro">10 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('ChickenSoup')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('ChickenSoup')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('ChickenSoup')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Masaladosa" class="tr">
-                <td id="no">15</td>
+                <td id="no" class="no">15</td>
                 <td id="pic"><img src="{% static 'food/t/maxresdefault.jpg' %}"></td>
-                <td id="name">Masala dosa </td>
-                <td id="cal">168 </td>
-                <td id="fat">3.7 </td>
-                <td id="pro">3.9 </td>
+                <td id="name" class="name">Masala dosa </td>
+                <td id="calc" class="calc">168 </td>
+                <td id="fat" class="fat">3.7 </td>
+                <td id="pro" class="pro">3.9 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Masaladosa')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Masaladosa')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Masaladosa')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Idli" class="tr">
-                <td id="no">16</td>
+                <td id="no" class="no">16</td>
                 <td id="pic"><img src="{% static 'food/t/idli-56a510b63df78cf772862c34.jpg' %}"></td>
-                <td id="name">Idli </td>
-                <td id="cal">39 </td>
-                <td id="fat">0.1 </td>
-                <td id="pro">1 </td>
+                <td id="name" class="name">Idli </td>
+                <td id="calc" class="calc">39 </td>
+                <td id="fat" class="fat">0.1 </td>
+                <td id="pro" class="pro">1 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Idli')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Idli')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Idli')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Muri" class="tr">
-                <td id="no">17</td>
+                <td id="no" class="no">17</td>
                 <td id="pic"><img src="{% static 'food/t/Muri03375154.jpg' %}"></td>
-                <td id="name">Muri </td>
-                <td id="cal">80 </td>
-                <td id="fat">0.3 </td>
-                <td id="pro">1 </td>
+                <td id="name" class="name">Muri </td>
+                <td id="calc" class="calc">80 </td>
+                <td id="fat" class="fat">0.3 </td>
+                <td id="pro" class="pro">1 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Muri')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Muri')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Muri')">-</button>
                 </td>
@@ -996,195 +996,195 @@
                 <th>Total calorie</th>
             </tr>
             <tr id="Roti1" class="tr">
-                <td id="no">1</td>
+                <td id="no" class="no">1</td>
                 <td id="pic"><img src="{% static 'food/d/download.jpg' %}"></td>
-                <td id="name">Roti </td>
-                <td id="cal">71 </td>
-                <td id="fat">0.4 </td>
-                <td id="pro">3 </td>
+                <td id="name" class="name">Roti </td>
+                <td id="calc" class="calc">71 </td>
+                <td id="fat" class="fat">0.4 </td>
+                <td id="pro" class="pro">3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Roti1')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Roti1')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Roti1')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Puri" class="tr">
-                <td id="no">2</td>
+                <td id="no" class="no">2</td>
                 <td id="pic"><img src="{% static 'food/d/rava-poori-puri-recipe.jpg' %}"></td>
-                <td id="name">Puri </td>
-                <td id="cal">101 </td>
-                <td id="fat">7.4 </td>
-                <td id="pro">1.3 </td>
+                <td id="name" class="name">Puri </td>
+                <td id="calc" class="calc">101 </td>
+                <td id="fat" class="fat">7.4 </td>
+                <td id="pro" class="pro">1.3 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Puri')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Puri')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Puri')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="DumAloo" class="tr">
-                <td id="no">3</td>
+                <td id="no" class="no">3</td>
                 <td id="pic"><img src="{% static 'food/d/Dum-Aloo-Recipe-Step-By-Step-Instructions.jpg' %}"></td>
-                <td id="name">Dum Aloo </td>
-                <td id="cal">330 </td>
-                <td id="fat">40 </td>
-                <td id="pro">6 </td>
+                <td id="name" class="name">Dum Aloo </td>
+                <td id="calc" class="calc">330 </td>
+                <td id="fat" class="fat">40 </td>
+                <td id="pro" class="pro">6 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('DumAloo')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('DumAloo')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('DumAloo')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="DhokarDalna" class="tr">
-                <td id="no">4</td>
+                <td id="no" class="no">4</td>
                 <td id="pic"><img src="{% static 'food/d/ovrgh4r_dhoke-dalna_625x300_04_April_19.jpg' %}"></td>
-                <td id="name">Dhokar Dalna </td>
-                <td id="cal">165 </td>
-                <td id="fat">3.5 </td>
-                <td id="pro">10 </td>
+                <td id="name" class="name">Dhokar Dalna </td>
+                <td id="calc" class="calc">165 </td>
+                <td id="fat" class="fat">3.5 </td>
+                <td id="pro" class="pro">10 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('DhokarDalna')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('DhokarDalna')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('DhokarDalna')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Soyabeancurry1" class="tr">
-                <td id="no">5</td>
+                <td id="no" class="no">5</td>
                 <td id="pic"><img src="{% static 'food/d/Soyabean 1).jpg' %}"></td>
-                <td id="name">Soyabean curry </td>
-                <td id="cal">156 </td>
-                <td id="fat">8.6 </td>
-                <td id="pro">32.7 </td>
+                <td id="name" class="name">Soyabean curry </td>
+                <td id="calc" class="calc">156 </td>
+                <td id="fat" class="fat">8.6 </td>
+                <td id="pro" class="pro">32.7 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Soyabeancurry1')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Soyabeancurry1')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Soyabeancurry1')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Cauliflowercurry" class="tr">
-                <td id="no">6</td>
+                <td id="no" class="no">6</td>
                 <td id="pic"><img src="{% static 'food/d/Cauliflower curry1).jpg' %}"></td>
-                <td id="name">Cauliflower curry</td>
-                <td id="cal">161 </td>
-                <td id="fat">3.9 </td>
-                <td id="pro">2.7 </td>
+                <td id="name" class="name">Cauliflower curry</td>
+                <td id="calc" class="calc">161 </td>
+                <td id="fat" class="fat">3.9 </td>
+                <td id="pro" class="pro">2.7 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Cauliflowercurry')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Cauliflowercurry')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Cauliflowercurry')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="EggCurry" class="tr">
-                <td id="no">7</td>
+                <td id="no" class="no">7</td>
                 <td id="pic"><img src="{% static 'food/d/Egg Currye.jpg' %}"></td>
-                <td id="name">Egg Curry </td>
-                <td id="cal">156 </td>
-                <td id="fat">13 </td>
-                <td id="pro">10 </td>
+                <td id="name" class="name">Egg Curry </td>
+                <td id="calc" class="calc">156 </td>
+                <td id="fat" class="fat">13 </td>
+                <td id="pro" class="pro">10 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('EggCurry')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('EggCurry')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('EggCurry')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Aloopotoltarkari" class="tr">
-                <td id="no">8</td>
+                <td id="no" class="no">8</td>
                 <td id="pic"><img src="{% static 'food/d/aloo potoler torkari1).jpg' %}"></td>
-                <td id="name">Aloo potol tarkari </td>
-                <td id="cal">142 </td>
-                <td id="fat">5 </td>
-                <td id="pro">2 </td>
+                <td id="name" class="name">Aloo potol tarkari </td>
+                <td id="calc" class="calc">142 </td>
+                <td id="fat" class="fat">5 </td>
+                <td id="pro" class="pro">2 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Aloopotoltarkari')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Aloopotoltarkari')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Aloopotoltarkari')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="ChickenCurry" class="tr">
-                <td id="no">9</td>
+                <td id="no" class="no">9</td>
                 <td id="pic"><img src="{% static 'food/d/Instant-Pot-Chicken-Curry-Recipe.jpg' %}"></td>
-                <td id="name">Chicken Curry </td>
-                <td id="cal">273 </td>
-                <td id="fat">13.4 </td>
-                <td id="pro">29 </td>
+                <td id="name" class="name">Chicken Curry </td>
+                <td id="calc" class="calc">273 </td>
+                <td id="fat" class="fat">13.4 </td>
+                <td id="pro" class="pro">29 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('ChickenCurry')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('ChickenCurry')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('ChickenCurry')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Benunbharta" class="tr">
-                <td id="no">10</td>
+                <td id="no" class="no">10</td>
                 <td id="pic"><img src="{% static 'food/d/begun bharta.jpg' %}"></td>
-                <td id="name">Benun bharta </td>
-                <td id="cal">112 </td>
-                <td id="fat">9.2 </td>
-                <td id="pro">1.1 </td>
+                <td id="name" class="name">Benun bharta </td>
+                <td id="calc" class="calc">112 </td>
+                <td id="fat" class="fat">9.2 </td>
+                <td id="pro" class="pro">1.1 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Benunbharta')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Benunbharta')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Benunbharta')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Aloobhaja" class="tr">
-                <td id="no">11</td>
+                <td id="no" class="no">11</td>
                 <td id="pic"><img src="{% static 'food/d/Aloo Bhaja 7858.jpg' %}"></td>
-                <td id="name">Aloo bhaja </td>
-                <td id="cal">220 </td>
-                <td id="fat">7.8 </td>
-                <td id="pro">2.7 </td>
+                <td id="name" class="name">Aloo bhaja </td>
+                <td id="calc" class="calc">220 </td>
+                <td id="fat" class="fat">7.8 </td>
+                <td id="pro" class="pro">2.7 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Aloobhaja')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Aloobhaja')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Aloobhaja')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Begunbhaja" class="tr">
-                <td id="no">12</td>
+                <td id="no" class="no">12</td>
                 <td id="pic"><img src="{% static 'food/d/Begun Bhaja6.jpg' %}"></td>
-                <td id="name">Begun bhaja </td>
-                <td id="cal">43 </td>
-                <td id="fat">2.4 </td>
-                <td id="pro">1.5 </td>
+                <td id="name" class="name">Begun bhaja </td>
+                <td id="calc" class="calc">43 </td>
+                <td id="fat" class="fat">2.4 </td>
+                <td id="pro" class="pro">1.5 </td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Begunbhaja')">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Begunbhaja')">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Begunbhaja')">-</button>
                 </td>
                 <td class="tota">0</td>
             </tr>
             <tr id="Bhindimasala" class="tr">
-                <td id="no">13</td>
+                <td id="no" class="no">13</td>
                 <td id="pic"><img src="{% static 'food/d/Bhindi-Masala-500x500.jpg' %}"></td>
-                <td id="name">Bhindi masala </td>
-                <td id="cal">83 </td>
-                <td id="fat">1.4 </td>
-                <td id="pro">3.6</td>
+                <td id="name" class="name">Bhindi masala </td>
+                <td id="calc" class="calc">83 </td>
+                <td id="fat" class="fat">1.4 </td>
+                <td id="pro" class="pro">3.6</td>
                 <td id="barb">Carbs</td>
                 <td id="suga">Sugar</td>
-                <td id="qty"><button class="plus" onclick="plus('Bhindimasala');">+</button>
+                <td id="qty" class="qty"><button class="plus" onclick="plus('Bhindimasala');">+</button>
                     <input type="number" id="myNumber" class="myNumber" min="0" max="5" value="0">
                     <button class="minus" onclick="minus('Bhindimasala')">-</button>
                 </td>
@@ -1199,6 +1199,10 @@
     <div class="result text-center" id="result">
     </div><br>
 
+    <div class="text-center">
+        <a href="#" class ="final" onclick="final()">Final diet chart</a>
+    </div>
+    <br>
     <script>
         $(document).ready(function() {
             var referrer =  document.referrer;
@@ -1237,12 +1241,17 @@
     </script>
     <script>
         function total() {
-            var cookieValue = document.getElementsByClassName('tota');
+            var cookieValue = document.getElementsByClassName('tr');
             var i;
             var p = [];
             var sum = 0;
             for (i = 0; i < cookieValue.length; i++) {
-                y = parseInt(cookieValue[i].innerHTML);
+                y = parseInt(cookieValue[i].getElementsByClassName("tota")[0].innerHTML);
+                name = cookieValue[i].getElementsByClassName("name")[0].innerHTML;
+                fat = cookieValue[i].getElementsByClassName("fat")[0].innerHTML;
+                pro = cookieValue[i].getElementsByClassName("pro")[0].innerHTML;
+                qty = cookieValue[i].getElementsByClassName("qty")[0].getElementsByClassName("myNumber")[0].value;
+                console.log(name,fat,pro,y,qty);
                 p.push(y);
                 sum = sum + y;
             }
@@ -1254,12 +1263,22 @@
                 $('.myNumber').removeAttr('disabled');
                 $('.plus').removeAttr('disabled');
             }
-            console.log(sum);
+            console.log(p);
+        }
+        function final(){
+            var qty = document.getElementsByClassName('qty');
+            var i;
+            for (i = 0; i < qty.length; i++) {
+                // if (qty.getElementsByClassName("myNumber")[0].value> 1)
+                // {
+                //     console.log(qty);
+                // }
+            }
         }
     </script>
     <script>
         function plus(z) {
-            p = "#" + z + " #cal";
+            p = "#" + z + " .calc";
             q = "#" + z + " #myNumber";
             r = "#" + z + " .tota";
             var x = parseInt($(p).html());
@@ -1274,7 +1293,7 @@
         }
 
         function minus(z) {
-            p = "#" + z + " #cal";
+            p = "#" + z + " .calc";
             q = "#" + z + " #myNumber";
             r = "#" + z + " .tota";
             var x = parseInt($(p).html());
