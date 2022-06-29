@@ -173,4 +173,5 @@ def Advanced(request):
 
 
 
-
+def fba(request):
+    return render(request,"fba.html")

@@ -14,6 +14,7 @@ urlpatterns = [
     path('diet_plan',views.diet_plan,name="diet_plan"),
     path('diet_input',views.diet_input,name="diet_input"),
     path('idealw',views.ideal_weight,name="idealw"),
+    path('fba',views.fba,name="fba"),
     path('exercise',views.exercise,name="exercise"),
     path('arm',views.arm,name="arm"),
     path('chest',views.chest,name="chest"),

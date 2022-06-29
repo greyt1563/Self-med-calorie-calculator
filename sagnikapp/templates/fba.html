@@ -1,0 +1,77 @@
+{% extends 'theme/Practice1.html' %}
+{% load static %}
+{% block head %}
+
+<title>complete nutrition design </title>
+<!-- <link rel="stylesheet" href="{% static 'exercise style.css' %}">  -->
+<style>
+    .review{
+        background: linear-gradient(90deg, #f3f2f0 0%, #e8e9eb 50%, #cacbcf 100%);
+        border-radius: 50px;
+    }
+    .boxer1{
+        background: #f6f6f6;
+        border-radius: 50px;
+    }
+    .boxer2{
+        background: #f9f9f9;
+        border-radius: 50px;
+    }
+    .boxer3{
+        background: #f6f6f6;
+        border-radius: 50px;
+    }
+</style>
+{% endblock head %}
+
+{% block body %}
+
+<!-- home section starts  -->
+
+
+
+<section class="review container my-5 p-3" id="review">
+    <div class="row">
+        <h1 class="heading col-sm-12 text-center"> <span>Full Body Analysis </span> </h1>
+    </div>
+    <div class="row box-container ">
+        <div class="col-sm-4">
+            <div class="boxer1 p-5">
+                <h2>Calorie</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="boxer">
+                    <h1>Image</h1>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="cont">
+                <div class="row my-2">
+                    <div class="col-sm">
+                        <div class="boxer2 p-5">
+                             <h1>BMI</h1>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="boxer2 p-5">
+                             <h1>bfp</h1>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="boxer3 p-5">
+                             <h1>Ideal Weight</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+{% endblock body %}
